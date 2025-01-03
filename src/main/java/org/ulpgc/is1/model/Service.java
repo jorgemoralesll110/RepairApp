@@ -54,4 +54,8 @@ public class Service {
         }
         this.payment = payment;
     }
+
+    public String getPayment() {
+        return payment.toString();
+    }
 }

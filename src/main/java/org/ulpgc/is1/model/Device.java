@@ -1,6 +1,7 @@
 package org.ulpgc.is1.model;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Device {
@@ -37,5 +38,24 @@ public class Device {
     }
     public void setOwner(Customer owner) {
         this.owner = owner;
+    }
+
+    public void addService(ServiceType type, String description) {
+        Service service = new Service(type, description);
+        services.add(service);
+    }
+
+    public void payService(int serviceId, int amount, Date date) {
+        for (Service service : services) {
+            if (service.getId() == serviceId) {
+                service.pay(new Payment(date, amount));
+                return;
+            }
+        }
+        throw new IllegalArgumentException("Service not found.");
+    }
+
+    public Service[] getServices() {
+        return services.toArray(new Service[0]);
     }
 }
