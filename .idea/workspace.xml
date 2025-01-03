@@ -4,35 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c1cb7e8-2e52-4f3d-afbf-f44b69149df7" name="Changes" comment="Commit">
+    <list default="true" id="8c1cb7e8-2e52-4f3d-afbf-f44b69149df7" name="Changes" comment="First Commit: Creation of the Project Structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/control/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Budget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Budget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/DeviceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/DeviceType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/ServiceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/ServiceType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Work.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Work.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Enum" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
-}</component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "jorgemoralesll110"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/jorgemoralesll110/RepairApp.git",
+    "accountId": "eb8db4a5-6519-4e74-b4b4-85f7704d86b6"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
   <component name="ProjectId" id="2r72Ayslv90uM1OJ7ChPbseiPrS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -44,7 +41,6 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "node.js.selected.package.tslint": "(autodetect)",
     "onboarding.tips.debug.path": "C:/Users/tomas/Desktop/IS/RepairApp/src/main/java/org/example/Main.java"
   }
 }]]></component>
@@ -57,17 +53,26 @@
       <option name="presentableId" value="Default" />
       <updated>1735895655437</updated>
     </task>
+    <task id="LOCAL-00001" summary="First Commit: Creation of the Project Structure">
+      <option name="closed" value="true" />
+      <created>1735895955630</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735895955630</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+    <MESSAGE value="First Commit: Creation of the Project Structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit: Creation of the Project Structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/ulpgc/is1/control/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
