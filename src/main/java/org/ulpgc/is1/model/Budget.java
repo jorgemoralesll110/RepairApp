@@ -6,6 +6,8 @@ public class Budget {
     public Date date;
     public int amount;
 
+    //TODO: mirar +manager y cómo se relaciona con budget
+
     public Budget(Date date, int amount) {
         this.date = date;
         this.amount = amount;
