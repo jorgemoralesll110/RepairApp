@@ -45,10 +45,11 @@ public class ServiceManager {
         return new ArrayList<>(employees);
     }
 
-    public void service(Device device, ServiceType type, String description) {
+    public Service service(Device device, ServiceType type, String description) {
         if (device != null && type != null && description != null && !description.isEmpty()) {
             device.addService(type, description);
         }
+        return null;
     }
 
     public void payService(Device device, int serviceId, int amount, Date date) {
@@ -57,7 +58,7 @@ public class ServiceManager {
         }
     }
 
-    public void DeviceServiceList(Device device) {
+    public List<Service> getDeviceServiceList(Device device) {
         if (device != null) {
             for (Service service : device.getServices()) {
                 System.out.println("Service ID: " + service.getId());
@@ -66,6 +67,7 @@ public class ServiceManager {
                 System.out.println("Service Payment: " + service.getPayment());
             }
         }
+        return null;
     }
 
 }

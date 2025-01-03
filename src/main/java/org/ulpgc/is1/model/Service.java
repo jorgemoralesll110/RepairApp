@@ -58,4 +58,13 @@ public class Service {
     public String getPayment() {
         return payment.toString();
     }
+
+    public void addWork(Employee employee, Work work) {
+        if (employee != null && work != null) {
+            if (!technicians.contains(employee)) {
+                throw new IllegalArgumentException("Employee is not assigned to this service.");
+            }
+
+        }
+    }
 }
