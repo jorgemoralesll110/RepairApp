@@ -1,14 +1,19 @@
 package org.ulpgc.is1.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Customer {
     private String name;
     private String surname;
     private Phone phone;
+    private List<Device> devices;
 
     public Customer(String name, String surname, Phone phone) {
         this.name = name;
         this.surname = surname;
         this.phone = phone;
+        this.devices = new ArrayList<>();
     }
 
     public String getName() {
@@ -23,6 +28,10 @@ public class Customer {
         return surname;
     }
 
+    public List<Device> getDevices() {
+        return devices;
+    }
+
     public void setSurname(String surname) {
         this.surname = surname;
     }
@@ -34,4 +43,5 @@ public class Customer {
     public void setPhone(Phone phone) {
         this.phone = phone;
     }
+
 }

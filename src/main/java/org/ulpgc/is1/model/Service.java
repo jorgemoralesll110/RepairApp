@@ -5,6 +5,7 @@ public class Service {
     public final int id;
     public ServiceType type;
     public String description;
+    private Payment payment;
 
     public Service(ServiceType type, String description) {
         this.id = NEXT_ID++;
@@ -30,5 +31,10 @@ public class Service {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public void pay(Payment payment) {
+        // TODO: implement
+        //this.payment = payment;
     }
 }
