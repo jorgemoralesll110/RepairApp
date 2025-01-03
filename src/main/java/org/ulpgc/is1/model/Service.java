@@ -49,6 +49,9 @@ public class Service {
 
     public void pay(Payment payment) {
         // TODO: implement
-        //this.payment = payment;
+        if (this.payment != null) {
+            throw new IllegalStateException("This service has already been paid.");
+        }
+        this.payment = payment;
     }
 }
