@@ -23,22 +23,18 @@ public class Device {
     public String getSerialNumber() {
         return serialNumber;
     }
-
     public DeviceType getType() {
         return type;
     }
-
     public Customer getOwner() {
         return owner;
     }
     public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
     }
-
     public void setType(DeviceType type) {
         this.type = type;
     }
-
     public void setOwner(Customer owner) {
         this.owner = owner;
     }

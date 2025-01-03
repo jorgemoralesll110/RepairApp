@@ -19,29 +19,22 @@ public class Customer {
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public String getSurname() {
         return surname;
     }
-
     public List<Device> getDevices() {
         return devices;
     }
-
     public void setSurname(String surname) {
         this.surname = surname;
     }
-
     public Phone getPhone() {
         return phone;
     }
-
     public void setPhone(Phone phone) {
         this.phone = phone;
     }
-
 }
