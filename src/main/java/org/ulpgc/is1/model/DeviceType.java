@@ -1,4 +1,5 @@
 package org.ulpgc.is1.model;
 
-public class DeviceType {
+public enum DeviceType {
+    DESKTOP, LAPTOP, SMARTPHONE, TABLET;
 }
