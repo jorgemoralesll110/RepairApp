@@ -1,5 +1,6 @@
 package org.ulpgc.is1.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Service {
@@ -9,12 +10,13 @@ public class Service {
     public String description;
     private Payment payment;
 
-    //TODO: REVISAR +manager y +technician Y VER CÓMO SE RELACIONAN CON SERVICE
+    private List<Employee> technicians;
 
     public Service(ServiceType type, String description) {
         this.id = NEXT_ID++;
         this.type = type;
         this.description = description;
+        this.technicians = new ArrayList<>();
     }
 
     public int getId() {
@@ -33,11 +35,17 @@ public class Service {
         this.type = type;
     }
 
+    public List<Employee> getTechnicians() {
+        return technicians;
+    }
+
     public void setDescription(String description) {
         this.description = description;
     }
 
-
+    public void addTechnician(Employee technician) {
+        this.technicians.add(technician);
+    }
 
     public void pay(Payment payment) {
         // TODO: implement

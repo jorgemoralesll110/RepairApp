@@ -6,14 +6,18 @@ import java.util.List;
 public class Device {
     public String serialNumber;
     public DeviceType type;
-    private Customer customer;
+    private Customer owner;
     private List<Service> services;
 
-    public Device(String serialNumber, DeviceType type, Customer customer) {
+    public Device(String serialNumber, DeviceType type, Customer owner) {
         this.serialNumber = serialNumber;
         this.type = type;
-        this.customer = customer;
+        this.owner = owner;
         this.services = new ArrayList<>();
+
+//        if (owner != null) {
+//            owner.addDevice(this);
+//        }
     }
 
     public String getSerialNumber() {
@@ -24,8 +28,8 @@ public class Device {
         return type;
     }
 
-    public Customer getCustomer() {
-        return customer;
+    public Customer getOwner() {
+        return owner;
     }
     public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
@@ -35,7 +39,7 @@ public class Device {
         this.type = type;
     }
 
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
+    public void setOwner(Customer owner) {
+        this.owner = owner;
     }
 }
