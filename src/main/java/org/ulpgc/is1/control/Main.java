@@ -7,7 +7,6 @@ import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
-        // Crear instancia del ServiceManager
         ServiceManager serviceManager = new ServiceManager();
 
         // i. Crear dos clientes
@@ -38,14 +37,14 @@ public class Main {
         serviceManager.service(device2, ServiceType.REPAIR, serviceDescription);
 
         // Asociar el empleado 2 como técnico del servicio
-        Service service = device2.getServices()[0]; // Obtener el primer (y único) servicio del dispositivo
+        Service service = device2.getServices()[0];
         service.addTechnician(employee2);
 
         // v. Asignar dos trabajos al servicio
         Work work1 = new Work(2, "Desmontaje");
         Work work2 = new Work(5, "Reparación y montaje");
 
-        service.addTechnician(employee1); // Añadir al empleado1 como técnico del servicio
+        service.addTechnician(employee1);
 
         // vi. Pagar el servicio creado en el punto iv
         Payment payment = new Payment(new Date(), 100);
@@ -53,6 +52,7 @@ public class Main {
 
         // vii. Mostrar los datos como en las imágenes proporcionadas
         printServiceDetails(customer1, device2, service, payment, employee1, employee2, work1, work2);
+        printServiceDetails(customer2, device3, service, payment, employee1, employee2, work1, work2);
     }
 
     private static void printServiceDetails(Customer customer, Device device, Service service, Payment payment,
