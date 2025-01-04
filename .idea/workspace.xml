@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c1cb7e8-2e52-4f3d-afbf-f44b69149df7" name="Changes" comment="Eighth Commit: pay method implemented">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/control/Main.java" afterDir="false" />
+    <list default="true" id="8c1cb7e8-2e52-4f3d-afbf-f44b69149df7" name="Changes" comment="Seventh Commit: attributes added">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,26 +45,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/tomas/Desktop/IS/RepairApp/src/main/java/org/example/Main.java",
-    "vue.rearranger.settings.migration": "true"
+    "onboarding.tips.debug.path": "C:/Users/tomas/Desktop/IS/RepairApp/src/main/java/org/example/Main.java"
   }
 }]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-19.0.2-corretto-19.0.2-f644763e9732-1e16d6ec" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,8 +60,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1735895655437</updated>
-      <workItem from="1735988580051" duration="1585000" />
-      <workItem from="1735992146825" duration="1038000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit: Creation of the Project Structure">
       <option name="closed" value="true" />
@@ -111,27 +93,8 @@
       <option name="project" value="LOCAL" />
       <updated>1735902786070</updated>
     </task>
-    <task id="LOCAL-00005" summary="Eighth Commit: pay method implemented">
-      <option name="closed" value="true" />
-      <created>1735902947466</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1735902947466</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Eighth Commit: pay method implemented">
-      <option name="closed" value="true" />
-      <created>1735904133082</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1735904133082</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="5" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit: Creation of the Project Structure" />
@@ -139,7 +102,17 @@
     <MESSAGE value="Fifth Commit: classes development" />
     <MESSAGE value="Sixth Commit: ServiceManager development" />
     <MESSAGE value="Seventh Commit: attributes added" />
-    <MESSAGE value="Eighth Commit: pay method implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eighth Commit: pay method implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seventh Commit: attributes added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/ulpgc/is1/control/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

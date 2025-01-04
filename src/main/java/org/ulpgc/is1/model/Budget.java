@@ -7,7 +7,7 @@ public class Budget {
     public int amount;
     private Employee manager;
 
-    public Budget(Date date, int amount, Employee manager) {
+    public Budget(Date date, int amount) {
         this.date = date;
         this.amount = amount;
         this.manager = manager;
