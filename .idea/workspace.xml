@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c1cb7e8-2e52-4f3d-afbf-f44b69149df7" name="Changes" comment="Eleventh Commit: Main development">
+    <list default="true" id="8c1cb7e8-2e52-4f3d-afbf-f44b69149df7" name="Changes" comment="twelfth commit: classes fixing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Budget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Budget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Phone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Work.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Work.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +76,8 @@
       <option name="presentableId" value="Default" />
       <updated>1735895655437</updated>
       <workItem from="1736089131206" duration="407000" />
-      <workItem from="1736254326089" duration="3843000" />
+      <workItem from="1736254326089" duration="3971000" />
+      <workItem from="1736268582443" duration="2527000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit: Creation of the Project Structure">
       <option name="closed" value="true" />
@@ -131,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735994201265</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="twelfth commit: classes fixing">
+      <option name="closed" value="true" />
+      <created>1736258264036</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1736258264036</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +148,7 @@
     <MESSAGE value="Sixth Commit: ServiceManager development" />
     <MESSAGE value="Seventh Commit: attributes added" />
     <MESSAGE value="Eleventh Commit: Main development" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eleventh Commit: Main development" />
+    <MESSAGE value="twelfth commit: classes fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="twelfth commit: classes fixing" />
   </component>
 </project>

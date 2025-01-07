@@ -13,7 +13,7 @@ public class Service {
     private Budget budget;
     private List<Employee> technicians;
 
-    public Service(ServiceType type, String description, int amount) {
+    public Service(ServiceType type, String description) {
         this.id = NEXT_ID++;
         this.type = type;
         this.description = description;
@@ -58,14 +58,5 @@ public class Service {
 
     public String getPayment() {
         return payment.toString();
-    }
-
-    public void addWork(Employee employee, Work work) {
-        if (employee != null && work != null) {
-            if (!technicians.contains(employee)) {
-                throw new IllegalArgumentException("Employee is not assigned to this service.");
-            }
-
-        }
     }
 }
