@@ -16,9 +16,6 @@ public class Device {
         this.owner = owner;
         this.services = new ArrayList<>();
 
-//        if (owner != null) {
-//            owner.addDevice(this);
-//        }
     }
 
     public String getSerialNumber() {

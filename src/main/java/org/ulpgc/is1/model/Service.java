@@ -1,6 +1,7 @@
 package org.ulpgc.is1.model;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Service {
@@ -9,13 +10,14 @@ public class Service {
     public ServiceType type;
     public String description;
     private Payment payment;
-
+    private Budget budget;
     private List<Employee> technicians;
 
-    public Service(ServiceType type, String description) {
+    public Service(ServiceType type, String description, int amount) {
         this.id = NEXT_ID++;
         this.type = type;
         this.description = description;
+        this.budget = budget;
         this.technicians = new ArrayList<>();
     }
 
@@ -48,7 +50,6 @@ public class Service {
     }
 
     public void pay(Payment payment) {
-        // TODO: implement
         if (this.payment != null) {
             throw new IllegalStateException("This service has already been paid.");
         }

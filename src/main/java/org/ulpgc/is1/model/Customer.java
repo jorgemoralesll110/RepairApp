@@ -7,13 +7,13 @@ public class Customer {
     private String name;
     private String surname;
     private Phone phone;
-    private List<Device> devices;
+    private List<Device> owner;
 
     public Customer(String name, String surname, Phone phone) {
         this.name = name;
         this.surname = surname;
         this.phone = phone;
-        this.devices = new ArrayList<>();
+        this.owner = new ArrayList<Device>();
     }
 
     public String getName() {
@@ -25,8 +25,8 @@ public class Customer {
     public String getSurname() {
         return surname;
     }
-    public List<Device> getDevices() {
-        return devices;
+    public List<Device> getOwners() {
+        return owner;
     }
     public void setSurname(String surname) {
         this.surname = surname;

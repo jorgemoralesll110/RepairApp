@@ -3,12 +3,15 @@ package org.ulpgc.is1.model;
 public class Phone {
     private String number;
 
-    public boolean isValid() {
-        return number != null && number.length() == 9;
+    public Phone(String number) {
+        if (!isValid(number)) {
+            throw new IllegalArgumentException("The phone number must have 9 digits");
+        }
+        this.number = number;
     }
 
-    public Phone(String number) {
-        this.number = number;
+    public boolean isValid(String number) {
+        return number != null && number.length() == 9;
     }
 
     public String getNumber() {
