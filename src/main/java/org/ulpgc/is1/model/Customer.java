@@ -38,4 +38,19 @@ public class Customer {
         this.phone = phone;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Customer customer = (Customer) o;
+        return name.equals(customer.name) &&
+                surname.equals(customer.surname) &&
+                phone.getNumber().equals(customer.phone.getNumber());
+    }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(name, surname, phone.getNumber());
+    }
+
 }

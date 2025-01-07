@@ -30,4 +30,18 @@ public class Employee {
     public void setSurname(String surname) {
         this.surname = surname;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return number == employee.number;
+    }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(number);
+    }
+
 }

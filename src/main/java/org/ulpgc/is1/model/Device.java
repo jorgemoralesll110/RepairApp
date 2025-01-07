@@ -55,4 +55,18 @@ public class Device {
     public void addService(ServiceType type, String description) {
         services.add(new Service(type, description));
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Device device = (Device) o;
+        return serialNumber.equals(device.serialNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(serialNumber);
+    }
+
 }
