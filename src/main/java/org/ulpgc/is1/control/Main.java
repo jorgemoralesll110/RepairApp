@@ -2,97 +2,43 @@ package org.ulpgc.is1.control;
 
 import org.ulpgc.is1.model.*;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        ServiceManager serviceManager = new ServiceManager();
+        ServiceManager manager = new ServiceManager();
 
-        // i. Crear dos clientes
-        Customer customer1 = new Customer("Antonio", "García González", new Phone("928112233"));
-        Customer customer2 = new Customer("María", "Pérez López", new Phone("928445566"));
+        //i. Crear dos clientes. Deben controlar que no se añadan clientes repetidos.
+        Customer customer1 = new Customer("Luis", "Garcia", new Phone("928467846"));
+        Customer customer2 = new Customer("Sara", "Gil", new Phone("928749274"));
+        manager.addCustomer(customer1);
+        manager.addCustomer(customer2);
 
-        serviceManager.addCustomer(customer1);
-        serviceManager.addCustomer(customer2);
+        //ii. Crear tres dispositivos. Asignarle los dos primeros dispositivos al primer cliente y el tercer dispositivo al segundo cliente. Deben controlar que no se añadan dispositivos repetidos.
+        Device device1 = new Device("2758", DeviceType.SMARTPHONE, customer1);
+        Device device2 = new Device("4574", DeviceType.LAPTOP, customer1);
+        Device device3 = new Device("9867", DeviceType.TABLET, customer2);
+        manager.addDevice(device1);
+        manager.addDevice(device2);
+        manager.addDevice(device3);
 
-        // ii. Crear tres dispositivos
-        Device device1 = new Device("1234-5678", DeviceType.TABLET, customer1);
-        Device device2 = new Device("5678-1234", DeviceType.LAPTOP, customer1);
-        Device device3 = new Device("9876-5432", DeviceType.SMARTPHONE, customer2);
+        //iii. Crear dos empleados. Deben controlar que no se añadan empleados repetidos.
+        Employee employee1 = new Employee(1, "Manuel", "Gonzalez");
+        Employee employee2 = new Employee(2, "Ana", "Perez");
+        manager.addTechnician(employee1);
+        manager.addTechnician(employee2);
 
-        serviceManager.addDevice(device1);
-        serviceManager.addDevice(device2);
-        serviceManager.addDevice(device3);
-
-        // iii. Crear dos empleados
-        Employee employee1 = new Employee(1, "Antonio", "García González");
-        Employee employee2 = new Employee(2, "José", "Rodríguez Pérez");
-
-        serviceManager.addTechnician(employee1);
-        serviceManager.addTechnician(employee2);
-
-        // iv. Crear un servicio tipo ‘Repair’ para el segundo dispositivo del primer cliente
-        String serviceDescription = "Arreglo del portátil";
-        serviceManager.service(device2, ServiceType.REPAIR, serviceDescription);
-
-        // Asociar el empleado 2 como técnico del servicio
-        Service service = device2.getServices()[0];
+        //iv. Crear un servicio tipo ‘Repair’ para el segundo dispositivo del primer cliente. El manager de este servicio será el segundo empleado. Este servicio se pagará posteriormente (pto. ‘vi’).
+        manager.service(device2, ServiceType.REPAIR, "Broken screen", customer1);
+        Service service = device2.getServices().get(0);
         service.addTechnician(employee2);
 
-        // v. Asignar dos trabajos al servicio
-        Work work1 = new Work(2, "Desmontaje");
-        Work work2 = new Work(5, "Reparación y montaje");
+        //v. Sobre el servicio anterior (pto. ‘iv’) se realizará dos trabajos que se asignará a cada uno de los dos empleados creados en el punto ‘iii’. Se debe utilizar el método ‘getServiceList’ de la clase de control.
 
-        service.addTechnician(employee1);
 
-        // vi. Pagar el servicio creado en el punto iv
-        Payment payment = new Payment(new Date(), 100);
-        service.pay(payment);
 
-        // vii. Mostrar los datos como en las imágenes proporcionadas
-        printServiceDetails(customer1, device2, service, payment, employee1, employee2, work1, work2);
-        printServiceDetails(customer2, device3, service, payment, employee1, employee2, work1, work2);
-    }
+        //vi. Pagar el servicio creado en el punto ‘iv’.
+        //vii. Mostrar de forma clara los datos todos los servicios realizados al segundo dispositivo del primer cliente incluyendo todos sus datos asociados.
 
-    private static void printServiceDetails(Customer customer, Device device, Service service, Payment payment,
-                                            Employee employee1, Employee employee2, Work work1, Work work2) {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-
-        // Encabezado del cliente
-        System.out.println("**************************************************");
-        System.out.println("Cliente " + customer.getName() + " " + customer.getSurname() + " (tlf.: " + customer.getPhone().getNumber() + ")");
-        System.out.println("**************************************************");
-
-        // Detalles del servicio
-        System.out.println("\n----------------------------------------");
-        System.out.println("Servicio (ref. " + service.getId() + ")");
-        System.out.println("----------------------------------------");
-        System.out.println("*) Datos del servicio:");
-        System.out.println("|- Ref.: " + service.getId());
-        System.out.println("|- Descripción: " + service.getDescription());
-        System.out.println("|- Tipo: " + service.getType());
-        System.out.println("|- Información del pago: Pago { fecha del pago= " + dateFormat.format(payment.getDate())
-                + ", cantidad= " + payment.getAmount() + " euros }");
-
-        // Detalles del dispositivo
-        System.out.println("\n*) Datos del dispositivo:");
-        System.out.println("|- Serial Number: " + device.getSerialNumber());
-        System.out.println("|- Tipo: " + device.getType());
-
-        // Detalles del presupuesto
-        System.out.println("\n*) Datos del presupuesto:");
-        System.out.println("|- Gestionado por: " + employee2.getName() + " " + employee2.getSurname());
-        System.out.println("|- Fecha: " + dateFormat.format(payment.getDate()));
-        System.out.println("|- Total: " + payment.getAmount());
-
-        // Tareas realizadas en el servicio
-        System.out.println("\n----------------------------------------");
-        System.out.println("Tareas realizadas en el servicio");
-        System.out.println("----------------------------------------");
-        System.out.println("Tarea { técnico =" + employee1.getName() + " " + employee1.getSurname() +
-                ", concepto='" + work1.getDescription() + "', tiempo invertido =" + work1.getTimeSpent() + " }");
-        System.out.println("Tarea { técnico =" + employee2.getName() + " " + employee2.getSurname() +
-                ", concepto='" + work2.getDescription() + "', tiempo invertido =" + work2.getTimeSpent() + " }");
     }
 }

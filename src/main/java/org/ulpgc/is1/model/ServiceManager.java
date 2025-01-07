@@ -45,8 +45,8 @@ public class ServiceManager {
         return new ArrayList<>(employees);
     }
 
-    public void service(Device device, ServiceType type, String description) {
-        if (device != null && type != null && description != null && !description.isEmpty()) {
+    public void service(Device device, ServiceType type, String description, Customer customer) {
+        if (device != null && type != null && description != null && !description.isEmpty() && customer != null) {
             device.addService(type, description);
         }
     }

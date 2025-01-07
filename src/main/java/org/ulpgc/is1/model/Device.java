@@ -51,4 +51,8 @@ public class Device {
     public List<Service> getServices() {
         return new ArrayList<>(services);
     }
+
+    public void addService(ServiceType type, String description) {
+        services.add(new Service(type, description));
+    }
 }

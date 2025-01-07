@@ -12,12 +12,11 @@ public class Service {
     private Budget budget;
     private List<Employee> technicians;
 
-    public Service(ServiceType type, String description, Budget budget) {
+    public Service(ServiceType type, String description) {
         this.id = NEXT_ID++;
         this.type = type;
         this.description = description;
         this.technicians = new ArrayList<>();
-        this.budget = budget;
         this.payment = null;
     }
 
