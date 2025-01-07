@@ -45,11 +45,10 @@ public class ServiceManager {
         return new ArrayList<>(employees);
     }
 
-    public Service service(Device device, ServiceType type, String description) {
+    public void service(Device device, ServiceType type, String description) {
         if (device != null && type != null && description != null && !description.isEmpty()) {
             device.addService(type, description);
         }
-        return null;
     }
 
     public void payService(Device device, int serviceId, int amount, Date date) {
@@ -58,16 +57,21 @@ public class ServiceManager {
         }
     }
 
-    public List<Service> getDeviceServiceList(Device device) {
-        if (device != null) {
-            for (Service service : device.getServices()) {
-                System.out.println("Service ID: " + service.getId());
-                System.out.println("Service Type: " + service.getType());
-                System.out.println("Service Description: " + service.getDescription());
-                System.out.println("Service Payment: " + service.getPayment());
+    public List<Device> getDeviceServiceList(ServiceType type) {
+        List<Device> matchingDevices = new ArrayList<>();
+        for (Device device : devices) {
+            List<Service> services = device.getServices();
+            if (services != null) {
+                for (Service service : services) {
+                    if (service.getType() == type) {
+                        matchingDevices.add(device);
+                        break;
+                    }
+                }
             }
         }
-        return null;
+        return matchingDevices;
+
     }
 
 }

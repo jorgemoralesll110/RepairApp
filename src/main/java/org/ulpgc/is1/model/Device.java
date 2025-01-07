@@ -37,10 +37,6 @@ public class Device {
         this.owner = owner;
     }
 
-    public void addService(ServiceType type, String description) {
-        Service service = new Service(type, description);
-        services.add(service);
-    }
 
     public void payService(int serviceId, int amount, Date date) {
         for (Service service : services) {
@@ -52,7 +48,7 @@ public class Device {
         throw new IllegalArgumentException("Service not found.");
     }
 
-    public Service[] getServices() {
-        return services.toArray(new Service[0]);
+    public List<Service> getServices() {
+        return new ArrayList<>(services);
     }
 }

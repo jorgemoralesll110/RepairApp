@@ -13,7 +13,7 @@ public class Customer {
         this.name = name;
         this.surname = surname;
         this.phone = phone;
-        this.owner = new ArrayList<Device>();
+        this.owner = new ArrayList<>();
     }
 
     public String getName() {

@@ -1,7 +1,6 @@
 package org.ulpgc.is1.model;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class Service {
@@ -13,12 +12,13 @@ public class Service {
     private Budget budget;
     private List<Employee> technicians;
 
-    public Service(ServiceType type, String description) {
+    public Service(ServiceType type, String description, Budget budget) {
         this.id = NEXT_ID++;
         this.type = type;
         this.description = description;
-        this.budget = budget;
         this.technicians = new ArrayList<>();
+        this.budget = budget;
+        this.payment = null;
     }
 
     public int getId() {
@@ -58,5 +58,13 @@ public class Service {
 
     public String getPayment() {
         return payment.toString();
+    }
+
+    public Budget getBudget() {
+        return budget;
+    }
+
+    public void setBudget(Budget budget) {
+        this.budget = budget;
     }
 }

@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c1cb7e8-2e52-4f3d-afbf-f44b69149df7" name="Changes" comment="twelfth commit: classes fixing">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Device.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/DeviceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/DeviceType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/ServiceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ulpgc/is1/model/ServiceManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +46,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2r72Ayslv90uM1OJ7ChPbseiPrS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
